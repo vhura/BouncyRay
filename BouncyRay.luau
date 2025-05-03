@@ -61,6 +61,8 @@ function BouncyRay_helper.Shoot(BouncyRay: BouncyRay)
 		
 		BouncyRay._CurrentDirection = ReflectedVector
 		BouncyRay._CurrentPosition = Results.Position
+
+		BouncyRay_helper.Shoot(BouncyRay)
 	else
 		BouncyRay_helper.Destroy(BouncyRay)
 	end
