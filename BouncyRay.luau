@@ -26,6 +26,7 @@ function BouncyRay_helper.new(Origin: Vector3, InitialDirection: Vector3, Params
 		_CurrentPosition = Origin,
 		_CurrentDirection = InitialDirection,
 		_CurrentBounces = 0,
+		_Callbacks = {},
 		_HasShot = false
 	} :: BouncyRay
 	
